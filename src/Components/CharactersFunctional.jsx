@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function CharactersFunctional() {
     const [character, setCharacter] = useState({ name: 'Vivi', age: 9, isMage: true });
 
-    function changeCharacter(){
+    const changeCharacter = () => {
         setCharacter({ name: 'Zidane', age: 16, isMage: false })
     }
 

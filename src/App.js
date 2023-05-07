@@ -1,7 +1,7 @@
 import './App.css';
 import { name, age, city } from './Components/Utility'
 import Example from './Components/Example';
-import { Conditional, Komponenta1, Komponenta2, Komponenta3, Komponenta4, Klasa, CharactersFunctional } from './Components';
+import { Conditional, Komponenta1, Komponenta2, Komponenta3, Komponenta4, Klasa, CharactersFunctional, CharactersClass, Events } from './Components';
 
 const person1 = 'Sanja';
 const person2 = 'Tomislav';
@@ -30,8 +30,10 @@ export default function App() {
       <h2>Class component vježba</h2>
       <Klasa ime={korisnici[1].ime} godine={korisnici[1].godine}/>
 
-      <h2>State vježba</h2>
+      <h2>State & Events vježba</h2>
       <CharactersFunctional />
+      <CharactersClass />
+      <Events />
     </div>
   );
 }
