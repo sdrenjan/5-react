@@ -1,7 +1,7 @@
 import './App.css';
 import { name, age, city } from './Components/Utility'
 import Example from './Components/Example';
-import { Conditional, Komponenta1, Komponenta2, Komponenta3, Komponenta4, Klasa, CharactersFunctional, CharactersClass, Events } from './Components';
+import { Conditional, Komponenta1, Komponenta2, Komponenta3, Komponenta4, Klasa, CharactersFunctional, CharactersClass, Events, Forms } from './Components';
 
 const person1 = 'Sanja';
 const person2 = 'Tomislav';
@@ -34,6 +34,7 @@ export default function App() {
       <CharactersFunctional />
       <CharactersClass />
       <Events />
+      <Forms />
     </div>
   );
 }
