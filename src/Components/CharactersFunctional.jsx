@@ -19,3 +19,11 @@ function Details({ name, age, isMage, changeCharacter }) {
         </div>
     )
 }
+
+/* ili
+
+    function changeCharacter() {
+        setCharacter({ name: 'Zidane', age: 16, isMage: false })
+    }
+
+*/
