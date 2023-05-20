@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CharactersFunctional() {
     const [character, setCharacter] = useState({ name: 'Vivi', age: 9, isMage: true });
@@ -16,6 +17,8 @@ function Details({ name, age, isMage, changeCharacter }) {
         <div>
             <p>{name} is {age} years old and {isMage === true ? 'is mage' : `isn't mage`}.</p>
             <button onClick={changeCharacter}>Change Character</button>
+            <br />
+            <Link to='/'>home</Link>
         </div>
     )
 }

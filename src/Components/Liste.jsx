@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Lists() {
 
     const cars = [
@@ -11,6 +13,7 @@ export default function Lists() {
             <ul>
                 {cars.map(car => <li key={car.id}>I'm {car.brand}</li>)}
             </ul>
+            <Link to='/'>home</Link>
         </div>
     )
 }

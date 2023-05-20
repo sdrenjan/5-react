@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Forms() {
     const [message, setMessage] = useState('')
@@ -19,6 +20,7 @@ export default function Forms() {
                 <button type="submit">Submit</button>
             </form>
             {submittedMessage && <p>{submittedMessage}</p>}
+            <Link to='/'>home</Link>
         </div>
 
     )

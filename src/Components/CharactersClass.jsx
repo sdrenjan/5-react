@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default class CharactersClass extends React.Component {
-    state = { 
-        name: 'Vivi', 
-        age: 9, 
+    state = {
+        name: 'Vivi',
+        age: 9,
         isMage: true
     }
 
@@ -13,8 +14,8 @@ export default class CharactersClass extends React.Component {
 
     render() {
         return (
-            <Details name={this.state.name} age={this.state.age} isMage={this.state.isMage} changeCharacter={this.changeCharacter}/>
-            )
+            <Details name={this.state.name} age={this.state.age} isMage={this.state.isMage} changeCharacter={this.changeCharacter} />
+        )
     }
 }
 
@@ -22,9 +23,11 @@ class Details extends React.Component {
     render() {
         return (
             <div>
-            <p>{this.props.name} is {this.props.age} years old and {this.props.isMage === true ? 'is mage' : `isn't mage`}.</p>
-            <button onClick={this.props.changeCharacter}>Change Character</button>
-        </div>
+                <p>{this.props.name} is {this.props.age} years old and {this.props.isMage === true ? 'is mage' : `isn't mage`}.</p>
+                <button onClick={this.props.changeCharacter}>Change Character</button>
+                <br />
+                <Link to='/'>home</Link>
+            </div>
         )
     }
 }

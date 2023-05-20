@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom";
 
 export default function API() {
 
@@ -17,6 +18,7 @@ export default function API() {
             <p>Website: {data.website}</p>
             <p>Email: {data.email}</p>
             <p>Phone: {data.phone}</p>
+            <Link to='/'>home</Link>
         </div>
     )
 }

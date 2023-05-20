@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
+
 export default function Events() {
 
     const [character, setCharacter] = useState('');
@@ -17,6 +19,8 @@ export default function Events() {
             <input type='radio' name='character' value='Vivi'/>
             <label htmlFor='Vivi'>Vivi</label><br/>
             <button type='submit' onClick={handleSubmit}>Submit</button>
+            <br />
+            <Link to='/'>home</Link>
         </div>
     )
 }
